@@ -1,0 +1,63 @@
+<HTML>
+<HEAD>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=big5">
+   <META NAME="Author" CONTENT="陳寬達">
+   <META NAME="GENERATOR" CONTENT="Mozilla/4.01 [tw] (WinNT; I) [Netscape]">
+   <TITLE>DelphiChat/BCBChat 線上訂閱查詢系統</TITLE>
+</HEAD>
+<BODY>
+
+<!-- FORM 1, "subscribe" and "unsubscribe" -->
+<FORM METHOD="POST" ACTION="http:/cgi-bin/icscgi.exe">
+<INPUT TYPE="RADIO" NAME="action" VALUE="subscribe" CHECKED>訂閱
+<INPUT TYPE="RADIO" NAME="action" VALUE="unsubscribe">取消訂閱
+<P>
+討論群名稱 <SELECT NAME="LIST" SIZE=1>
+<OPTION SELECTED>DelphiChat
+<OPTION>BCBChat
+</SELECT>
+<P>
+訂閱者信箱 <INPUT TYPE="TEXT" NAME="ADDR" SIZE=50,1 MAXLENGTH=50>
+<P>
+訂閱者名稱（訂閱才需填寫） <INPUT TYPE="TEXT" NAME="USER" SIZE=20,1 MAXLENGTH=20>
+<P>
+<INPUT TYPE="SUBMIT" NAME="Submit" VALUE="送出">
+</FORM>
+<HR ALIGN=LEFT WIDTH=75%>
+
+<!-- FORM 2, "info" and "who" command -->
+<FORM METHOD="POST" ACTION="http:/cgi-bin/icscgi.exe">
+<INPUT TYPE="RADIO" NAME="action" VALUE="info" CHECKED>討論群簡介
+<INPUT TYPE="RADIO" NAME="action" VALUE="who">討論群訂閱者列表
+<P>
+討論群名稱 <SELECT NAME="LIST" SIZE=1>
+<OPTION SELECTED>DelphiChat
+<OPTION>BCBChat
+</SELECT>
+<P>
+<INPUT TYPE="SUBMIT" NAME="Submit" VALUE="送出">
+</FORM>
+<HR ALIGN=LEFT WIDTH=75%>
+
+<!-- FORM 3, "user" and "search" command -->
+<FORM METHOD="POST" ACTION="http:/cgi-bin/icscgi.exe">
+<INPUT TYPE="RADIO" NAME="action" VALUE="user" CHECKED>查詢使用者
+<INPUT TYPE="RADIO" NAME="action" VALUE="search">字串搜尋所有使用者
+<P>
+查詢位址 <INPUT TYPE="TEXT" NAME="ADDR" SIZE=50,1 MAXLENGTH=50>
+<P>
+<INPUT TYPE="SUBMIT" NAME="Submit" VALUE="送出">
+</FORM>
+<HR ALIGN=LEFT WIDTH=75%>
+
+<!-- FORM 4, "lists" and "help" command -->
+<FORM METHOD="POST" ACTION="http:/cgi-bin/icscgi.exe">
+<INPUT TYPE="RADIO" NAME="action" VALUE="lists" CHECKED>討論群列表
+<INPUT TYPE="RADIO" NAME="action" VALUE="help">指令說明
+<P>
+<INPUT TYPE="SUBMIT" NAME="Submit" VALUE="送出">
+</FORM>
+
+若有任何問題, 請向系統管理者陳寬達 <A HREF="mailto:Xshadow@cs.nthu.edu.tw">Xshadow@cs.nthu.edu.tw</A> 詢問。
+</BODY>
+</HTML>
